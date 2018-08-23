@@ -1,6 +1,6 @@
 {% set name = "cfunits" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "3735c1c9fea8e3b5b37094843b590a2dc856be3bc7df44d2476ad51902b04692" %}
+{% set version = "1.6" %}
+{% set sha256 = "6039f05b58970da82aee88586164eb0cb7b237b29286e4a4ebb73b6b2427127d" %}
 
 package:
   name: {{ name|lower }}
