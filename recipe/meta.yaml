@@ -1,6 +1,6 @@
 {% set name = "cfunits" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "3735c1c9fea8e3b5b37094843b590a2dc856be3bc7df44d2476ad51902b04692" %}
+{% set version = "1.7" %}
+{% set sha256 = "49a4d870d52cd47653c0344f76cb813262015c2d5f1e988b1c854608fe1981fe" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or py3k]
+  skip: True  # [win]
   script: python setup.py install --record record.txt
 
 requirements:
