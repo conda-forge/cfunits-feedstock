@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.8" %}
 
 package:
   name: cfunits
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: 49a4d870d52cd47653c0344f76cb813262015c2d5f1e988b1c854608fe1981fe
+  sha256: 30763360caaf8c49d84c9aca1e024c778e43172b94f1dfa85b379f7f6e6b1474
 
 build:
   number: 0
