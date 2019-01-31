@@ -7,6 +7,8 @@ package:
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
   sha256: 30763360caaf8c49d84c9aca1e024c778e43172b94f1dfa85b379f7f6e6b1474
+  patches:
+  - windll.patch
 
 build:
   number: 1001

@@ -1,0 +1,17 @@
+diff --git a/cfunits/units.py b/cfunits/units.py
+index 764c1c1..1d8e70e 100644
+--- a/cfunits/units.py
++++ b/cfunits/units.py
+@@ -38,9 +38,11 @@ _ctypes_POINTER = {4: _POINTER(_c_float),
+ if sys.platform == 'darwin':
+     # This has been tested on Mac OSX 10.5.8 and 10.6.8
+     _udunits = ctypes.CDLL('libudunits2.0.dylib')
+-else:
++elif sys.platform.startswith("linux"):
+     # Linux
+     _udunits = ctypes.CDLL('libudunits2.so.0')
++else:
++    _udunits = ctypes.CDLL('libudunits2.dll')
+ #--- End: if
+ 
+ # Suppress "overrides prefixed-unit" messages. This also suppresses
