@@ -11,9 +11,4 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.6'
-zip_keys:
-- - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
+- '2.7'
