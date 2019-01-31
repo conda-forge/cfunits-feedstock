@@ -11,7 +11,7 @@ index 764c1c1..1d8e70e 100644
      # Linux
      _udunits = ctypes.CDLL('libudunits2.so.0')
 +else:
-+    _udunits = ctypes.CDLL('libudunits2.dll')
++    _udunits = ctypes.CDLL('udunits2.dll')
  #--- End: if
  
  # Suppress "overrides prefixed-unit" messages. This also suppresses
