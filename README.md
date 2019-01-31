@@ -25,9 +25,8 @@ Udunits-2 database in order to be more consistent with the CF conventions <http:
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cfunits-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cfunits-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/cfunits-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cfunits-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cfunits-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cfunits-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cfunits-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cfunits-feedstock)
 
 Current release info
 ====================
