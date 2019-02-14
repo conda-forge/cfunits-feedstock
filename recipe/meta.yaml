@@ -1,4 +1,4 @@
-{% set version = "1.8" %}
+{% set version = "1.9" %}
 
 package:
   name: cfunits
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: 30763360caaf8c49d84c9aca1e024c778e43172b94f1dfa85b379f7f6e6b1474
+  sha256: f93817f9d6dd4ef38506d04bbd3f32901516e41e545754fd8b550f8db9cae7fd
   patches:
   - windll.patch
 
 build:
-  number: 1002
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
