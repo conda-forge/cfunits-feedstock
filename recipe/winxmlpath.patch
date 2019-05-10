@@ -1,8 +1,8 @@
 diff --git a/cfunits/units.py b/cfunits/units.py
-index caac22f..f28233d 100644
+index caac22f..fa1c826 100644
 --- a/cfunits/units.py
 +++ b/cfunits/units.py
-@@ -79,7 +79,13 @@ _ut_read_xml.argtypes = (_c_char_p, )
+@@ -79,7 +79,16 @@ _ut_read_xml.argtypes = (_c_char_p, )
  _ut_read_xml.restype = _c_void_p
  
  #print('units: before _udunits.ut_read_xml(',_unit_database,')')
@@ -11,13 +11,16 @@ index caac22f..f28233d 100644
 +    path_to_xml = None  # Use the default path
 +else:
 +    path_to_xml = _c_char_p(
-+        os.path.join(sys.prefix, "Lib/site-packages/cfunits/etc/udunits/udunits2.xml")
++        os.path.join(
++            sys.prefix,
++            "Lib/site-packages/cfunits/etc/udunits/udunits2.xml"
++        ).encode("utf-8")
 +    )
 +_ut_system = _ut_read_xml(path_to_xml)
  #print('units: after  _udunits.ut_read_xml(',_unit_database,')')
  
  # Reinstate the reporting of error messages
-@@ -234,12 +240,13 @@ assert(0 == _ut_map_symbol_to_unit(_c_char_p(b'Sv'), _UT_ASCII,
+@@ -234,12 +243,13 @@ assert(0 == _ut_map_symbol_to_unit(_c_char_p(b'Sv'), _UT_ASCII,
                                     _ut_get_unit_by_name(_ut_system, _c_char_p(b'sverdrup'))))
  
  # Add new base unit calendar_year
