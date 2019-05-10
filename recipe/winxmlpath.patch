@@ -11,7 +11,7 @@ index caac22f..e5eee37 100644
 +    path_to_xml = None  # Use the default path
 +else:
 +    path_to_xml = _c_char_p(
-+        os.path.join(sys.prefix, "Lib/site-packages/cfunits/etc/udunits/udunits2.xml")
++        os.path.join(sys.prefix, "Lib/site-packages/cfunits/etc/udunits/udunits2.xml").encode("utf-8")
 +    )
 +_ut_system = _ut_read_xml(path_to_xml)
  #print('units: after  _udunits.ut_read_xml(',_unit_database,')')
