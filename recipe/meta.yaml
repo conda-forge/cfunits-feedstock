@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: cfunits
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: 344e1e714a46572246e35f56f15735eab487cc47d5d1d85c9270fdb8fced1f18
+  sha256: 0012e53529d24febad95e1beb40887073450dea9c319a6ae4dd8d60eefb81bc9
   patches:
   - windll.patch
 
