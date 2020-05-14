@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A python interface to UNIDATA`s Udunits-2 package with CF extensions
+Summary: A python interface to UNIDATA's Udunits-2 package with CF extensions
 
 A python interface to UNIDATA`s Udunits-2 library with CF extensions.
 Store, combine and compare physical units and convert numeric values to different units.
@@ -124,4 +124,5 @@ Feedstock Maintainers
 =====================
 
 * [@cehbrecht](https://github.com/cehbrecht/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 
