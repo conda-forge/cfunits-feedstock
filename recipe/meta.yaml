@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2.6" %}
 
 package:
   name: cfunits
@@ -6,14 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: 344e1e714a46572246e35f56f15735eab487cc47d5d1d85c9270fdb8fced1f18
-  patches:
-  - windll.patch
-
+  sha256: 3fdbb0473f972a19ff3dd36d6d1302733f03a1ad9e0e86e421f58116c2b1ae28
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -21,8 +18,8 @@ requirements:
     - pip
   run:
     - python
-    - netcdf4
-    - numpy
+    - cftime >=1.1.1
+    - numpy >=1.15
     - udunits2
 
 test:
@@ -33,8 +30,8 @@ about:
   home: https://bitbucket.org/cfpython/cfunits-python
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: 'A python interface to UNIDATA`s Udunits-2 package with CF extensions'
+  license_file: LICENSE.txt
+  summary: "A python interface to UNIDATA's Udunits-2 package with CF extensions"
 
   description: |
     A python interface to UNIDATA`s Udunits-2 library with CF extensions.
@@ -50,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - cehbrecht
+    - ocefpaf
