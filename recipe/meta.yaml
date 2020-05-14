@@ -8,8 +8,7 @@ source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
   sha256: 3fdbb0473f972a19ff3dd36d6d1302733f03a1ad9e0e86e421f58116c2b1ae28
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
