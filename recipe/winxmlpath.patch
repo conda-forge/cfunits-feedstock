@@ -1,10 +1,11 @@
 --- cfunits-3.2.6.orig/cfunits/units.py	2020-04-27 14:16:24.000000000 -0300
-+++ cfunits-3.2.6/cfunits/units.py	2020-05-14 17:46:40.102635356 -0300
-@@ -65,7 +65,16 @@
++++ cfunits-3.2.6/cfunits/units.py	2020-05-15 14:23:59.404831200 -0300
+@@ -65,7 +65,17 @@
  _ut_read_xml.restype = _c_void_p
  
  #print('units: before _udunits.ut_read_xml(',_unit_database,')')
 -_ut_system = _ut_read_xml(None)
++import os
 +if sys.platform == 'darwin' or sys.platform.startswith("linux"):
 +    path_to_xml = None  # Use the default path
 +else:
