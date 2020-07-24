@@ -5,7 +5,7 @@ Home: https://bitbucket.org/cfpython/cfunits-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A python interface to UNIDATA's Udunits-2 package with CF extensions
 
