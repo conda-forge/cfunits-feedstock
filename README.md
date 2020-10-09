@@ -5,9 +5,13 @@ Home: https://bitbucket.org/cfpython/cfunits-python
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cfunits-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python interface to UNIDATA's Udunits-2 package with CF extensions
+
+Development: https://bitbucket.org/cfpython/cfunits-python/
+
+Documentation: http://pythonhosted.org/cfunits/
 
 A python interface to UNIDATA`s Udunits-2 library with CF extensions.
 Store, combine and compare physical units and convert numeric values to different units.
