@@ -1,4 +1,4 @@
-{% set version = "3.3.3" %}
+{% set version = "3.3.4" %}
 
 package:
   name: cfunits
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: a0973655844e3113dc7d2ccdb0e23fd74d81db75de4a7c6065754551aa1ecd0d
+  sha256: b54fa4b7016cbe69558df2c31449c4174c8fdf190cb59e9360d3036652550436
 build:
   number: 0
   noarch: python
