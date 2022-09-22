@@ -1,4 +1,4 @@
-{% set version = "3.3.4" %}
+{% set version = "3.3.5" %}
 
 package:
   name: cfunits
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
-  sha256: b54fa4b7016cbe69558df2c31449c4174c8fdf190cb59e9360d3036652550436
+  sha256: dd53b2e5d04d5188b88aac413fed267271432d60347ebe0b48298d405a930bf0
 build:
   number: 0
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - python >=3.6
     - cftime >=1.5.0
     - numpy >=1.15
+    - packaging >=20.0
     - udunits2
 
 test:
