@@ -1,11 +1,11 @@
-About cfunits
-=============
+About cfunits-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cfunits-feedstock/blob/main/LICENSE.txt)
 
 Home: https://bitbucket.org/cfpython/cfunits-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cfunits-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python interface to UNIDATA's Udunits-2 package with CF extensions
 
