@@ -5,19 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/cfunits/cfunits-{{ version }}.tar.gz
   sha256: e271ae2c01765cc437e7eefd802846894367179e3208653ab9b520ade48286d6
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - cftime >=1.5.0
     - numpy >=1.15
     - packaging >=20.0
@@ -30,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://bitbucket.org/cfpython/cfunits-python
